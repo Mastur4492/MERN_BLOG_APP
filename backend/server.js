@@ -7,7 +7,7 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors());
+app.use(cors("https://mern-blog-app-frontend-m6o4.onrender.com"));
 app.use(express.json());
 mongoose
   .connect(process.env.MONGO_URI, {
