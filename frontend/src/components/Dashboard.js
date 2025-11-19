@@ -13,7 +13,7 @@ const Dashboard = () => {
     const fetchBlogs = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.get("http://localhost:5000/api/blogs", {
+        const res = await axios.get("https://mern-blog-app-d4h9.onrender.com/api/blogs", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setBlogs(res.data);

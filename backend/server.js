@@ -15,6 +15,11 @@ mongoose
   .then(() => console.info("MongoDB connected"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
+
+  app.get("/", (req, res) => {
+    res.send("Welcome to the Blog API");
+  });
+
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/blogs", require("./routes/blogs"));
 

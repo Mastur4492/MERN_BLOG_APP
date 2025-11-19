@@ -10,7 +10,7 @@ const BlogDetail = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/blogs/${id}`);
+        const res = await axios.get(`https://mern-blog-app-d4h9.onrender.com/api/blogs/${id}`);
         setBlog(res.data);
       } catch (err) {
         console.error(err);

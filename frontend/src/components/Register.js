@@ -20,7 +20,7 @@ const Register = ({ onLogin }) => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://mern-blog-app-d4h9.onrender.com/api/auth/register",
         formData
       );
       localStorage.setItem("token", res.data.token);
